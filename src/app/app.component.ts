@@ -9,6 +9,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class AppComponent implements OnInit{
   allUsers:any = []
+  totalEmployee
   CboEmployeeForm:FormGroup
   searchText=''
   isEdit= false;
@@ -63,7 +64,7 @@ updateUser(){
     this.isEdit= !this.isEdit
   this._service.updateUser(this.userObj).subscribe((res)=>{
     this.getCurrentUser();
-
+this.CboEmployeeForm.reset()
   })
   }else{this.CboEmployeeForm.markAllAsTouched()}
   }

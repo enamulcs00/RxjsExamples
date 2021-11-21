@@ -8,6 +8,15 @@
       "dob": "2021-11-07",
       "remark": "Gopalganj",
       "id": 1
+    },
+    {
+      "empCode": "Mohal54",
+      "empName": "Mohal CBO",
+      "address": "Mohali",
+      "mobile": "89777878878",
+      "dob": "2021-11-11",
+      "remark": "Delhi CGO",
+      "id": 2
     }
   ]
 }
