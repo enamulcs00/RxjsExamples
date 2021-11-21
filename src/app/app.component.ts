@@ -55,7 +55,6 @@ DeleteUser(user){
   })
 }
 EditUser(user){
-  this.userObj = user;
   this.isEdit= true
   this.CboEmployeeForm.patchValue(user)
   }
