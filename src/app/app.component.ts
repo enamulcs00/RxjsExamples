@@ -45,8 +45,9 @@ addUser(){
   }
 }
 getCurrentUser() {
-  this._service.getAllUser().subscribe((response)=>{
-    this.allUsers= response;
+  this._service.getAllUser().subscribe((response:any)=>{
+    console.log('Get',response);
+  this.allUsers= response;
   })
 }
 DeleteUser(user){
