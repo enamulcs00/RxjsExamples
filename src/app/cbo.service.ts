@@ -8,20 +8,33 @@ export class CboService {
 
   constructor(private _httpMethods:HttpClient) { }
 
+  url = 'https://enamulgfb.firebaseio.com/CboData.json'
+
+
+  saveProduct(products:any[]){
+
+    return this._httpMethods.put(this.url,products)
+  }
+  fetchProduct(){
+    return this._httpMethods.get(this.url);
+  }
+
 
   createUser(user){
-    return this._httpMethods.post("http://localhost:3000/Employee",user);
+    return this._httpMethods.post("https://enamulgfb.firebaseio.com/cboInfo.json",user);
   }
   getAllUser(){
-  return this._httpMethods.get("http://localhost:3000/Employee");
+  return this._httpMethods.get("https://enamulgfb.firebaseio.com/cboInfo.json");
   }
   deleteUser(user){
-    return this._httpMethods.delete("http://localhost:3000/Employee/"+user.id);
+    return this._httpMethods.delete("https://enamulgfb.firebaseio.com/cboInfo.json"+user.UserId);
   }
   updateUser(user){
-    return this._httpMethods.put("http://localhost:3000/Employee/"+user.id,user);
+    return this._httpMethods.put("https://enamulgfb.firebaseio.com/cboInfo.json"+user.UserId,user);
   }
   getToday(): string {
-     return new Date().toISOString().split('T')[0]
+     return new Date().toTimeString()
     }
+
+
 }

@@ -1,0 +1,41 @@
+<div class="row">
+  <div class="col-md-3">
+    <div class="card">
+      <div class="card-header">
+        <h1>Name </h1>
+        <div class="card-body">
+          <select class="custom-select" id="inputGroupSelect02" #name>
+            <option selected>Choose...</option>
+            <option *ngFor="let item of nameSourec" [value]="item">{{item}}</option>
+            </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card">
+      <div class="card-header">
+        <h1>Color </h1>
+        <div class="card-body">
+          <select class="custom-select" id="inputGroupSelect02" #color>
+            <option selected>Choose...</option>
+            <option *ngFor="let item of colorsource" [value]="item">{{item}}</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+
+        <div class="card-body" id="elContainer">
+
+
+    </div>
+    <div class="col-md-3">
+
+      <div class="card-body" id="elContainer2">
+
+
+  </div>
+  </div>
+</div>
