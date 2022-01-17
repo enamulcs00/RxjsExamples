@@ -14,6 +14,8 @@ import { DebounceTimeComponent } from './_components/debounce-time/debounce-time
 import { FromEventComponent } from './_components/from-event/from-event.component';
 import { RxjsIntervalTimerComponent } from './_components/rxjs-interval-timer/rxjs-interval-timer.component';
 import { OfFromComponent } from './_components/of-from/of-from.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,7 @@ import { OfFromComponent } from './_components/of-from/of-from.component';
     Ng2SearchPipeModule,
     BrowserAnimationsModule,
     FormsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
 
   ],
   providers: [CboService],

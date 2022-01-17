@@ -36,5 +36,7 @@ export class CboService {
      return new Date().toTimeString()
     }
 
-
+fetchJokes(){
+  return this._httpMethods.get('https://api.chucknorris.io/jokes/random')
+}
 }

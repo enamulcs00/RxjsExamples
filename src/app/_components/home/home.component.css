@@ -1,4 +1,36 @@
-nav *{
-  font-size: large;
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.jumbotron{
+padding: 40px;
+margin-top: 30px;
+}
+nav strong{
+  float: right;
+  color: white;
+
+  padding: 10px 12px;
 
 }

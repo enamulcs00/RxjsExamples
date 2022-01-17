@@ -1,3 +1,4 @@
+import { DesignService } from './../../_services/design.service';
 import { debounceTime, distinctUntilChanged, map } from 'rxjs/operators';
 import { HttpClient } from '@angular/common/http';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
@@ -31,9 +32,10 @@ export class DebounceTimeComponent implements OnInit {
   constructor(
     public _service: CboService,
     private CboFb: FormBuilder,
-    private _http: HttpClient
+    private _http: HttpClient,
+    private _design:DesignService
   ) {
-    console.log("cons", document.readyState);
+     this._design.textExchane.next(this.constructor.name)
 
     this.CboEmployeeForm = this.CboFb.group({
       empCode: ["", Validators.required],
@@ -67,10 +69,10 @@ export class DebounceTimeComponent implements OnInit {
       });
   }
   ngOnInit() {
-    console.log("this", this);
+
 
     this.fetchPostedUser();
-    console.log(x);
+
     var x = 6;
   }
   addUser() {

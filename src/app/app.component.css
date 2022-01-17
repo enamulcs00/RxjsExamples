@@ -1,26 +1,24 @@
+strong{
+  position: fixed;
+  bottom: 0;
+  right: 4px;
+  background-color: yellow;
+  padding: 10px;
 
-
-.container {
-  padding-top: 50px;
-  padding-bottom: 10px;
-  color: #405065;
+  z-index: 1;
 }
-
-.search-cboItem {
-  max-width: 500px;
-  padding-bottom: 50px;
-  margin:auto;
+p{
+  position: sticky;
+  top: 80px;
+float: right;
+  background-color: green;
+  padding: 10px;
+  z-index: 1;
+  color: white;
+  width: fit-content;
 }
-
-.form-control {
-  box-shadow: 0 10px 40px 0 #B0C1D9;
-}
-.form-control::placeholder  {
-  font-family: FontAwesome;
-}
-.invalid-feedback{
-  color: red;
-}
-.jumbotron{
-  margin: 30px;
+.shifLoc{
+  position: fixed;
+  right: 10px;
+  bottom: 0;
 }
