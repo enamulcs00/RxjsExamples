@@ -12,6 +12,10 @@ import { CboService } from 'src/app/cbo.service';
   styleUrls: ['./debounce-time.component.css']
 })
 export class DebounceTimeComponent implements OnInit {
+
+  public value: number;
+  public maxValue: number = 100;
+  public minValue: number = 0;
   postUrl = "https://enamulgfb.firebaseio.com/cboInfo.json";
   dat: any = new Date();
   @ViewChild("TempRef") TempRef: ElementRef;
@@ -42,7 +46,7 @@ export class DebounceTimeComponent implements OnInit {
       empName: ["", Validators.required],
       address: ["", Validators.required],
       mobile: [
-        "",
+        "66656563",
         [
           Validators.required,
           Validators.maxLength(15),

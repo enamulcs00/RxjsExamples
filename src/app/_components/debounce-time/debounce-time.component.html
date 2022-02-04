@@ -31,7 +31,7 @@
         <div class="col-md-6">
           <div class="form-group">
             <label for="exampleInputEmail1">Mobile number</label>
-          <input type="tel" class="form-control" formControlName="mobile" >
+          <input type="tel" class="form-control"  formControlName="mobile" >
           <div class="invalid-feedback" *ngIf="CboEmployeeForm.get('mobile').hasError('required') && CboEmployeeForm.get('mobile').touched">
             Please enter employee mobile number.
           </div>
@@ -58,6 +58,16 @@
               <div class="invalid-feedback" *ngIf="CboEmployeeForm.get('remark').hasError('required') && CboEmployeeForm.get('remark').touched">
                 Please enter employee remark.
               </div>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Accept 0 t0 100</label>
+              <input type="text"
+              [min]="minValue"
+              [max]="maxValue"
+              minMax class="form-control" appUpto100>
+              <!-- <div class="invalid-feedback" *ngIf="CboEmployeeForm.get('empName').hasError('required') && CboEmployeeForm.get('empName').touched">
+                Please enter employee name.
+              </div> -->
             </div>
         </div>
       </div>

@@ -28,9 +28,9 @@ export class HomeComponent implements OnInit ,AfterViewInit{
 ngAfterViewInit(){
 
 const x = interval(2000)
-x.pipe(map(y=>'Enam '+y)).subscribe(res=>{
-  console.log(res);
+// x.pipe(map(y=>'Enam '+y)).subscribe(res=>{
+//   console.log(res);
 
-})
+// })
 }
 }
