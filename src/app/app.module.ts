@@ -16,6 +16,9 @@ import { RxjsIntervalTimerComponent } from './_components/rxjs-interval-timer/rx
 import { OfFromComponent } from './_components/of-from/of-from.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { Upto100Directive } from './_directives/upto100.directive';
+import { MaxLengthDirective } from './_directives/max-length.directive';
+
 
 @NgModule({
   declarations: [
@@ -25,7 +28,9 @@ import { environment } from '../environments/environment';
     DebounceTimeComponent,
     FromEventComponent,
     RxjsIntervalTimerComponent,
-    OfFromComponent
+    OfFromComponent,
+    Upto100Directive,
+    MaxLengthDirective
   ],
   imports: [
     BrowserModule,

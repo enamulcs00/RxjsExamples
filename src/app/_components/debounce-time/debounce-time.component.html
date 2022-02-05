@@ -59,16 +59,22 @@
                 Please enter employee remark.
               </div>
             </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Accept 0 t0 100</label>
-              <input type="text"
-              [min]="minValue"
-              [max]="maxValue"
-              minMax class="form-control" appUpto100>
-              <!-- <div class="invalid-feedback" *ngIf="CboEmployeeForm.get('empName').hasError('required') && CboEmployeeForm.get('empName').touched">
-                Please enter employee name.
-              </div> -->
-            </div>
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputEmail1">Accept 0 t0 100</label>
+          <input type="number"
+          [min]="minValue"
+          [max]="maxValue"
+           class="form-control" minMaxLengthDirective>
+
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Accept maxLength</label>
+          <input type="number"
+
+           class="form-control" [maxLengthShouldBe]="10">
+
         </div>
       </div>
       <button type="button"(click)="addUser()" class="btn btn-primary" *ngIf="!isEdit">Submit</button>
