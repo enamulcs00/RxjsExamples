@@ -1,3 +1,4 @@
+import { PaymentGatewayComponent } from './_components/payment-gateway/payment-gateway.component';
 import { OfFromComponent } from './_components/of-from/of-from.component';
 import { RxjsIntervalTimerComponent } from './_components/rxjs-interval-timer/rxjs-interval-timer.component';
 import { FromEventComponent } from './_components/from-event/from-event.component';
@@ -16,7 +17,8 @@ const routes: Routes = [{
   {path:'forkjoinAndZip',component:ForkjoinZipComponent},
   {path:'from_Event',component:FromEventComponent},
   {path:'interval_time',component:RxjsIntervalTimerComponent},
-{path:'Of_from',component:OfFromComponent}
+{path:'Of_from',component:OfFromComponent},
+{path:'payment_gateway',component:PaymentGatewayComponent}
 ]
 },
 ];

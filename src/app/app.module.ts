@@ -18,6 +18,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { Upto100Directive } from './_directives/upto100.directive';
 import { MaxLengthDirective } from './_directives/max-length.directive';
+import { PaymentGatewayComponent } from './_components/payment-gateway/payment-gateway.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { MaxLengthDirective } from './_directives/max-length.directive';
     RxjsIntervalTimerComponent,
     OfFromComponent,
     Upto100Directive,
-    MaxLengthDirective
+    MaxLengthDirective,
+    PaymentGatewayComponent
   ],
   imports: [
     BrowserModule,

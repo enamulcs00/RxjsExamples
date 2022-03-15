@@ -1,0 +1,28 @@
+<p>payment-gateway works!</p>
+<div class="container">
+<div class="row">
+  <div class="col-md-6">
+    <strong>Rozar Pay </strong>
+    <button class="btn btn-primary" (click)="openPaymentWindow()">Rozar Pay</button>
+
+  </div>
+  <div class="col-md-6">
+    <strong>Stripe Pay </strong>
+    <button class="btn btn-primary" (click)="pay(20)">Stripe Pay</button>
+    <p class="mt-5">
+      Try it out using the test card number <b>4242 4242 4242 4242</b>, a random three-digit CVC number, any expiration date in the future, and a random five-digit U.S. ZIP code.
+  </p>
+  </div>
+  <div class="col-md-6" >
+    <strong>Papal Payment gateway </strong>
+    <button class="btn btn-primary" (click)="PayPal()">Paypal Pay</button>
+  </div>
+  <div class="col-md-6"></div>
+  <div class="col-md-6"></div>
+  <div class="col-md-6" #payPalRef>
+
+  </div>
+
+</div>
+
+</div>

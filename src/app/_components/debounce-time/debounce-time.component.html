@@ -73,8 +73,7 @@
           <label for="exampleInputEmail1">Accept maxLength</label>
           <input type="number"
 
-           class="form-control" [maxLengthShouldBe]="10">
-
+           class="form-control" [maxLengthShouldBe]="10" (paste)="false">
         </div>
       </div>
       <button type="button"(click)="addUser()" class="btn btn-primary" *ngIf="!isEdit">Submit</button>
